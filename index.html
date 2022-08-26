@@ -6,75 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html, course, css,tags">
     <meta name="discription", content="описание страницы">
+    <link rel="stylesheet" href="text.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <title>Text</title>
 </head>
-<body>
-    
-    <h1>Ольховатов Миша</h1>
-    <br>
-    <hr>
-    <img src="Misha.jpg" width= 300 alt="Аватарка">
-
-    <p>Я Миша, ученик школы <strong>Result School</strong><br><br><em>Я только начал проходить обучение</em> </p>
-    <a href="http://vk.com/amigo_ramm" target="_blank">VK</a>
-<br>
-<h1>Мое хобби</h1>
-<ol type="a">
-    <li>Читать</li><li>Гулять</li><Li>Лежать</Li><li>Копать</li><li>Не копать</li>
-</ol>
-<h2>Опыт работы</h2>
-<table>
-    <thead>
-        <tr>
-            <th>Название</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Макдоналдс</td><td>Менеджер</td><td>2005-2009/2010-2013</td>
-        </tr>
-        <tr>
-            <td>Лендлорд</td><td>Менеджер</td><td>2013-2015</td>
-        </tr>
-        <tr>
-            <td>Кофемашина</td><td>Бариста</td><td>2015-2017</td>
-        </tr><tr>
-            <td>Шоколадница</td><td>Менеджер</td><td>2018</td>
-        </tr><tr>
-            <td>Золотой колос</td><td>Грузчик</td><td>2018-2019</td>
-        </tr><tr>
-            <td>ЦПК</td><td>Менеджер</td><td>2019-2022</td>
-        </tr>
-    </tbody>
-</table>
-<hr>
-<h3>Связаться со мной</h3>
-<form>
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите имя">
-    </div>
-    <div>
-        <label for="email">Ваша почта:</label>
-        <input type="email" id="email" placeholder="Введите почту">
-    </div>
-    <label>Ваш возраст:</label>
-        <input type="radio">18-25
-        <input type="radio">26-30
-        <input type="radio">31-45
-        <input type="radio">46-60
-        
-
-    <div>
-        <label for="message">Ваше сообщение:</label>
+<body>  
+<div class="container"> 
+    <div class="About">
+        <h1>Ольховатов Миша</h1>
         <br>
-        <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+        <hr>
+        <img src="Misha.jpg" alt="Аватарка" class="avatar">
+        <div class="About-text">
+            <p>Я Миша, ученик школы <strong>Result School</strong><br><br><em>Я только начал проходить обучение</em> </p>
+            <h4>Социальные сети</h4>
+            <a href="http://vk.com/amigo_ramm" target="_blank">VK</a>
+            <br>
+        </div>
     </div>
-    <div>
-        <button type="submit">Отправить форму</button>
+    <div class="hobby card">
+        <h1>Мое хобби</h1>
+        <ol type="a">
+            <li>Читать</li><li>Гулять</li><Li>Лежать</Li><li>Копать</li><li>Не копать</li>
+        </ol>
+        </div>
+    <div class="card">
+        <h2>Опыт работы</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Макдоналдс</td><td>Менеджер</td><td>2005-2009/2010-2013</td>
+                    </tr>
+                    <tr>
+                        <td>Лендлорд</td><td>Менеджер</td><td>2013-2015</td>
+                    </tr>
+                    <tr>
+                        <td>Кофемашина</td><td>Бариста</td><td>2015-2017</td>
+                    </tr><tr>
+                        <td>Шоколадница</td><td>Менеджер</td><td>2018</td>
+                    </tr><tr>
+                        <td>Золотой колос</td><td>Грузчик</td><td>2018-2019</td>
+                    </tr><tr>
+                        <td>ЦПК</td><td>Менеджер</td><td>2019-2022</td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
-</form>
+    <hr>
+    <!-- <div class="phone card"> -->
+        
+         <form action="/" class="form">
+            <h2>Связаться со мной</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" placeholder="Введите имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваша почта:</label>
+                    <input type="email" id="email" placeholder="Введите почту">
+                </div>
+                <!-- <label>Ваш возраст:</label>
+                    <input type="radio">18-25
+                    <input type="radio">26-30
+                    <input type="radio">31-45
+                    <input type="radio">46-60 -->
+            </div>    
+
+            <div class="form-group">
+                <label for="message">Ваше сообщение:</label>
+                <br>
+                <textarea id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
+            </div>
+            <div>
+                <input  class="btn" type="submit" value="Отправить сообщение"></input>
+            </div>
+        </form>
+    <!-- </div> -->
+</div> 
 </body>
 </html>
