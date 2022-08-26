@@ -71,6 +71,12 @@ a:visited {
     margin-left: 40px;
     padding: 10px;
 }
+@media (max-width: 940px) {
+    .About {
+        display: block;
+        text-align:center;
+    }
+}
 .phone {
     font-size: 150px;
     color: white;
